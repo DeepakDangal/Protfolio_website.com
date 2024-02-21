@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Dangal Website</title>
+    <style>
+        /* Reset styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-content img {
+            width: 200px;
+            border-radius: 30%;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Deepak Dangal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2><br>
+            <div class="about-content">
+                <img src="deepak.jpg" alt="Your Photo">
+                
+
+                <p><br>
+                    Welcome to my portfolio website! I'm Deepak Dangal, a passionate computer programming student currently pursuing my studies at Trios College in Toronto. At 21 years old, I am in the final year of my two-year program, eagerly diving deep into the world of software development and coding.
+
+                    Throughout my academic journey, I've cultivated a diverse skill set in various programming languages, frameworks, and technologies. From mastering the intricacies of languages like Java, Python, and JavaScript to exploring cutting-edge technologies such as React, Node.js, and Django, I've thrived in challenging myself and expanding my knowledge base.
+                    
+                    Driven by a relentless curiosity and a love for problem-solving, I've embarked on numerous projects that reflect my dedication to mastering the craft of software development. From developing web applications to crafting algorithms and solving complex coding challenges, each project has been a stepping stone in my journey towards becoming a proficient and versatile programmer.
+                    
+                    Beyond technical proficiency, I value collaboration, creativity, and continuous learning. I thrive in dynamic team environments, where diverse perspectives converge to create innovative solutions. As I venture into the professional realm, I am committed to leveraging my skills and experiences to contribute meaningfully to the ever-evolving landscape of technology.
+                    
+                    This portfolio serves as a showcase of my work, a testament to my passion for programming, and a platform to connect with like-minded individuals and opportunities. Whether you're a fellow programmer, a potential employer, or simply curious about my journey, I invite you to explore my projects, delve into my experiences, and connect with me on this exciting odyssey of learning and growth.
+                    
+                    Thank you for visiting, and I look forward to the possibilities that lie ahead!.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Add your projects here -->
+            <div class="project">
+                <br>
+                <h3>HR Management Software</h3>
+                <br>
+                <p>Introducing our Java-powered HR Management Software: a streamlined solution for efficient HR operations. With robust features, intuitive interfaces, and top-notch security, our software simplifies recruitment, onboarding, performance management, and more. Scalable and customizable, it adapts to your organization's needs seamlessly. Experience the future of HR management with our Java-based solution.</p>
+                <a href="https://github.com/DeepakDangal">GitHub Link</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: DeepakDangal79@gmail.com</p>
+            <p>Contract info: +1 647-564-9842</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Deepak Dangal</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav a');
+
+            for (const link of links) {
+                link.addEventListener('click', smoothScroll);
+            }
+
+            function smoothScroll(e) {
+                e.preventDefault();
+
+                const targetId = e.target.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offsetTop = targetElement.offsetTop;
+
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
+</body>
+</html>
